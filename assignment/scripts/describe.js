@@ -134,6 +134,7 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX - colorOne should be blue and colorTwo should be red.
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
@@ -151,6 +152,7 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
+//FIX - Should be using && otherwise will print if only one operands are true.
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -165,6 +167,8 @@ let age = 21;
 const minAge = 21;
 
 if(minAge <= age) {
+
+// FIX - if should console.log 'enter' and esle should be 'no entry'.  As written now 21+ will be barred.
   console.log('no entry');
 } else {
   console.log('enter');
